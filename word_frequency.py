@@ -33,5 +33,19 @@ user_sentence = input("Enter a sentence: ")
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
-    user_input = input("Enter a sentence: ")
+    user_sentence = input("Enter a sentence: ")
+word = user_sentence.split()
+list1 = word
+list2 = [0]*len(user_sentence)
+i = 0
+q = 1
+print("Output: ")
+for i in range(len(user_sentence)):
+    if(list1[i] == list1[i+1]):
+        list1.insert(i,list1[i]) == list1.insert(q, list1[q])
+        list2.insert(i,list1[i])
+        print(list1[i])
+        i+= 1
+    else:
+        print("Hi")
     
